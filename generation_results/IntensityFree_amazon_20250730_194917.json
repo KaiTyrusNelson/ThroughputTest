@@ -1,0 +1,9 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "amazon",
+  "num_steps": 94,
+  "total_sequences": 3072,
+  "wall_time_seconds": 2.36,
+  "sequences_per_second": 1299.9,
+  "timestamp": "2025-07-30T19:49:17.093988"
+}

@@ -1,0 +1,9 @@
+{
+  "model_type": "NHP",
+  "dataset": "stackoverflow",
+  "num_steps": 101,
+  "total_sequences": 1401,
+  "wall_time_seconds": 9.41,
+  "sequences_per_second": 148.87,
+  "timestamp": "2025-07-30T11:46:35.171917"
+}

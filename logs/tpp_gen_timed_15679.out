@@ -1,0 +1,44 @@
+Starting timed generation: THP on taobao
+Checkpoint: ./checkpoints/THP/taobao/20250730_140042/2117399_140355487323200_250730-140042/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15679
+Array Task ID: 3
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:57:26,547 - config.py[pid:2269409;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:57:26,566 - runner_config.py[pid:2269409;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-30 18:57:26,573 - runner_config.py[pid:2269409;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taobao/20250730_120941/2269409_140212939404352_250730-185726/THP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 64 as number of prediction steps for dataset
+
+2. Generating 64 prediction steps...
+Generating 64 prediction steps...
+Processing batch 1...
+Original sequence length: 64, truncated to: 64 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/THP_20250730_185815.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: THP
+Dataset: ./data/taobao/train.pkl
+Prediction steps: 64
+Total sequences processed: 1300
+Wall time: 47.53 seconds
+Sequences per second: 27.35
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 1.1999s (2.8%)
+  Thinning algorithm: 41.0931s (97.2%)
+  Total sampling time: 42.2930s
+  Total sampling calls: 100
+============================================================
+Completed timed generation: THP on taobao

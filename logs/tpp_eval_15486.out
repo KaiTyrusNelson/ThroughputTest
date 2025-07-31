@@ -1,0 +1,19 @@
+Starting evaluation: THP on taxi
+Checkpoint: ./checkpoints/THP/taxi/20250729_172516/1547788_139709305361600_250729-172516/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15486
+Array Task ID: 0
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:27,422 - config.py[pid:1632062;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:27,464 - runner_config.py[pid:1632062;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:27,471 - runner_config.py[pid:1632062;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1632062_140469092176960_250729-235127/THP_train_output.yaml[0m
+✓ Successfully loaded THP model and dataset
+Model parameters: 118,184
+Dataset sequences: 1400
+Log likelihood per event: 0.3513
+Total events: 50454
+Total sequences processed: 1400
+Walltime for evaluation: 0.19 seconds
+Samples per second: 7465.92
+Results logged to: ./results/THP_20250729_235129.json
+Completed evaluation: THP on taxi

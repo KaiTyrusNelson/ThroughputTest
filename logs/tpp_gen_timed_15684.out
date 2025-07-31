@@ -1,0 +1,48 @@
+Starting timed generation: SAHP on retweet
+Checkpoint: ./checkpoints/SAHP/retweet/20250729_172031/1547474_140470562505920_250729-172031/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15684
+Array Task ID: 8
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:58:18,976 - config.py[pid:2270065;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:58:19,560 - runner_config.py[pid:2270065;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:58:19,567 - runner_config.py[pid:2270065;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/retweet/20250729_172031/2270065_140531354162240_250730-185818/SAHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 264 as number of prediction steps for dataset
+
+2. Generating 264 prediction steps...
+Generating 264 prediction steps...
+Processing batch 1...
+Original sequence length: 97, truncated to: 264 events
+Processing batch 2...
+Original sequence length: 97, truncated to: 264 events
+Processing batch 3...
+Original sequence length: 97, truncated to: 264 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/SAHP_20250730_185958.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/retweet/retweet/train.pkl
+Prediction steps: 264
+Total sequences processed: 6144
+Wall time: 94.50 seconds
+Sequences per second: 65.01
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 3.2485s (3.5%)
+  Thinning algorithm: 88.2843s (96.5%)
+  Total sampling time: 91.5328s
+  Total sampling calls: 300
+============================================================
+Completed timed generation: SAHP on retweet

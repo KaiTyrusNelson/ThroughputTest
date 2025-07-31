@@ -1,0 +1,43 @@
+Starting evaluation: NHP on taobao
+Checkpoint: ./checkpoints/NHP/taobao/20250729_171910/1547333_140088285840576_250729-171910/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15499
+Array Task ID: 13
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:33,588 - config.py[pid:1632377;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:33,621 - runner_config.py[pid:1632377;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:33,629 - runner_config.py[pid:1632377;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taobao/20250729_171910/1632377_140698949465152_250729-235133/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 234,786
+Dataset sequences: 1300
+Batch size 2048 failed: CUDA out of memory. Tried to allocate 19.53 GiB. GPU 0 has a total capacity of 23.68 GiB of which 2.84 GiB is free. Including non-PyTorch memory, this process has 20.83 GiB memory in use. Of the allocated memory 19.93 GiB is allocated by PyTorch, and 675.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 1028
+[31;1m2025-07-29 23:51:35,136 - config.py[pid:1632377;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:35,139 - runner_config.py[pid:1632377;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:35,148 - runner_config.py[pid:1632377;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taobao/20250729_171910/1632377_140698949465152_250729-235135/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 234,786
+Dataset sequences: 1300
+Batch size 1028 failed: CUDA out of memory. Tried to allocate 15.44 GiB. GPU 0 has a total capacity of 23.68 GiB of which 2.90 GiB is free. Including non-PyTorch memory, this process has 20.77 GiB memory in use. Of the allocated memory 15.76 GiB is allocated by PyTorch, and 4.77 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 512
+[31;1m2025-07-29 23:51:35,301 - config.py[pid:1632377;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:35,302 - runner_config.py[pid:1632377;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:35,311 - runner_config.py[pid:1632377;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taobao/20250729_171910/1632377_140698949465152_250729-235135/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 234,786
+Dataset sequences: 1300
+Batch size 512 failed: CUDA out of memory. Tried to allocate 7.69 GiB. GPU 0 has a total capacity of 23.68 GiB of which 3.68 GiB is free. Including non-PyTorch memory, this process has 19.99 GiB memory in use. Of the allocated memory 15.53 GiB is allocated by PyTorch, and 4.22 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 256
+[31;1m2025-07-29 23:51:35,562 - config.py[pid:1632377;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:35,562 - runner_config.py[pid:1632377;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:35,569 - runner_config.py[pid:1632377;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taobao/20250729_171910/1632377_140698949465152_250729-235135/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 234,786
+Dataset sequences: 1300
+Log likelihood per event: 0.9773
+Total events: 73905
+Total sequences processed: 1300
+Walltime for evaluation: 0.90 seconds
+Samples per second: 1442.50
+Results logged to: ./results/NHP_20250729_235136.json
+Completed evaluation: NHP on taobao

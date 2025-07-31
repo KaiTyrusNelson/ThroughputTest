@@ -1,0 +1,19 @@
+Starting evaluation: RMTPP on stackoverflow
+Checkpoint: ./checkpoints/RMTPP/stackoverflow/20250729_171832/1547205_140694965437632_250729-171832/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15495
+Array Task ID: 9
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:32,225 - config.py[pid:1632283;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:32,278 - runner_config.py[pid:1632283;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:32,286 - runner_config.py[pid:1632283;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/stackoverflow/20250729_171832/1632283_139988305769536_250729-235132/RMTPP_train_output.yaml[0m
+✓ Successfully loaded RMTPP model and dataset
+Model parameters: 143,682
+Dataset sequences: 1401
+Log likelihood per event: -2.7143
+Total events: 89096
+Total sequences processed: 1401
+Walltime for evaluation: 0.31 seconds
+Samples per second: 4497.08
+Results logged to: ./results/RMTPP_20250729_235133.json
+Completed evaluation: RMTPP on stackoverflow

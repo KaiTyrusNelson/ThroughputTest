@@ -1,0 +1,9 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "taxi",
+  "num_steps": 38,
+  "total_sequences": 1400,
+  "wall_time_seconds": 0.31,
+  "sequences_per_second": 4511.81,
+  "timestamp": "2025-07-30T19:48:10.500808"
+}

@@ -1,0 +1,19 @@
+Starting evaluation: RMTPP on taobao
+Checkpoint: ./checkpoints/RMTPP/taobao/20250729_171829/1547138_140181880394944_250729-171829/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15494
+Array Task ID: 8
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:32,052 - config.py[pid:1632262;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:32,121 - runner_config.py[pid:1632262;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:32,129 - runner_config.py[pid:1632262;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taobao/20250729_171829/1632262_140155680003136_250729-235132/RMTPP_train_output.yaml[0m
+✓ Successfully loaded RMTPP model and dataset
+Model parameters: 1,187
+Dataset sequences: 1300
+Log likelihood per event: -1.1255
+Total events: 73905
+Total sequences processed: 1300
+Walltime for evaluation: 0.23 seconds
+Samples per second: 5574.47
+Results logged to: ./results/RMTPP_20250729_235133.json
+Completed evaluation: RMTPP on taobao

@@ -1,0 +1,35 @@
+Starting evaluation: NHP on taxi
+Checkpoint: ./checkpoints/NHP/taxi/20250729_171832/1547204_139728506623168_250729-171832/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15471
+Array Task ID: 12
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:30,480 - config.py[pid:1629021;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:30,538 - runner_config.py[pid:1629021;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:30,545 - runner_config.py[pid:1629021;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629021_140602953602112_250729-234530/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 232,980
+Dataset sequences: 1400
+Batch size 2048 failed: CUDA out of memory. Tried to allocate 12.35 GiB. GPU 0 has a total capacity of 23.68 GiB of which 10.41 GiB is free. Including non-PyTorch memory, this process has 13.26 GiB memory in use. Of the allocated memory 12.61 GiB is allocated by PyTorch, and 424.73 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:32,277 - config.py[pid:1629021;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,281 - runner_config.py[pid:1629021;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,288 - runner_config.py[pid:1629021;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629021_140602953602112_250729-234532/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 232,980
+Dataset sequences: 1400
+Batch size 1028 failed: CUDA out of memory. Tried to allocate 9.07 GiB. GPU 0 has a total capacity of 23.68 GiB of which 1.39 GiB is free. Including non-PyTorch memory, this process has 22.28 GiB memory in use. Of the allocated memory 18.31 GiB is allocated by PyTorch, and 3.73 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 512
+[31;1m2025-07-29 23:45:32,502 - config.py[pid:1629021;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,503 - runner_config.py[pid:1629021;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,510 - runner_config.py[pid:1629021;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629021_140602953602112_250729-234532/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 232,980
+Dataset sequences: 1400
+Log likelihood per event: 0.5693
+Total events: 50454
+Total sequences processed: 1400
+Walltime for evaluation: 0.43 seconds
+Samples per second: 3241.38
+Results logged to: ./results/NHP_20250729_234532.json
+Completed evaluation: NHP on taxi

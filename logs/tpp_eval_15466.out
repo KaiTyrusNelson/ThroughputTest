@@ -1,0 +1,19 @@
+Starting evaluation: RMTPP on taxi
+Checkpoint: ./checkpoints/RMTPP/taxi/20250729_171828/1547089_139743946478784_250729-171828/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15466
+Array Task ID: 7
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:30,327 - config.py[pid:1628945;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:30,367 - runner_config.py[pid:1628945;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:30,374 - runner_config.py[pid:1628945;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1628945_139991138882624_250729-234530/RMTPP_train_output.yaml[0m
+✓ Successfully loaded RMTPP model and dataset
+Model parameters: 35,998
+Dataset sequences: 1400
+Log likelihood per event: 0.3214
+Total events: 50454
+Total sequences processed: 1400
+Walltime for evaluation: 0.17 seconds
+Samples per second: 8181.94
+Results logged to: ./results/RMTPP_20250729_234531.json
+Completed evaluation: RMTPP on taxi

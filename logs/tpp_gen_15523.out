@@ -1,0 +1,40 @@
+Starting generation: RMTPP on stackoverflow
+Checkpoint: ./checkpoints/RMTPP/stackoverflow/20250729_171832/1547205_140694965437632_250729-171832/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15523
+Array Task ID: 9
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading RMTPP model and dataset...
+[31;1m2025-07-30 11:30:14,586 - config.py[pid:2020477;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:15,282 - runner_config.py[pid:2020477;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:15,290 - runner_config.py[pid:2020477;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/stackoverflow/20250729_171832/2020477_140288216605760_250730-113014/RMTPP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 50 as number of prediction steps for dataset
+
+2. Generating 50 prediction steps...
+Generating 50 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 101, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/RMTPP_stackoverflow_20250730_113020.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: RMTPP
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 50
+Total sequences processed: 1401
+Wall time: 2.99 seconds
+Sequences per second: 468.68
+============================================================
+Completed generation: RMTPP on stackoverflow

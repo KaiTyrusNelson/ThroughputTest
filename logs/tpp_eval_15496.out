@@ -1,0 +1,19 @@
+Starting evaluation: RMTPP on retweet
+Checkpoint: ./checkpoints/RMTPP/retweet/20250729_171829/1547139_140604324336832_250729-171829/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15496
+Array Task ID: 10
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:32,712 - config.py[pid:1632318;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:32,764 - runner_config.py[pid:1632318;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:32,771 - runner_config.py[pid:1632318;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/retweet/20250729_171829/1632318_139739231454272_250729-235132/RMTPP_train_output.yaml[0m
+✓ Successfully loaded RMTPP model and dataset
+Model parameters: 697
+Dataset sequences: 9000
+Log likelihood per event: -4.2180
+Total events: 360731
+Total sequences processed: 9000
+Walltime for evaluation: 0.49 seconds
+Samples per second: 18261.73
+Results logged to: ./results/RMTPP_20250729_235134.json
+Completed evaluation: RMTPP on retweet

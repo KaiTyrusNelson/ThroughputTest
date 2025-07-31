@@ -1,0 +1,63 @@
+Model Evaluation Summary
+==================================================
+
+Total evaluations: 35
+Models: 6
+Datasets: 5
+
+Models evaluated:
+  - AttNHP
+  - IntensityFree
+  - NHP
+  - RMTPP
+  - SAHP
+  - THP
+
+Datasets evaluated:
+  - amazon
+  - retweet
+  - stackoverflow
+  - taobao
+  - taxi
+
+Performance Summary (samples/sec):
+------------------------------
+
+AttNHP:
+  amazon: 45.78 samples/sec
+  retweet: 62.60 samples/sec
+  stackoverflow: 47.87 samples/sec
+  taobao: 73.34 samples/sec
+  taxi: 187.01 samples/sec
+
+IntensityFree:
+  amazon: 22836.98 samples/sec
+  retweet: 26162.73 samples/sec
+  stackoverflow: 7216.33 samples/sec
+  taobao: 7886.08 samples/sec
+  taxi: 8177.73 samples/sec
+
+NHP:
+  amazon: 1078.70 samples/sec
+  retweet: 1555.77 samples/sec
+  stackoverflow: 1223.96 samples/sec
+  taobao: 1442.50 samples/sec
+  taxi: 3236.19 samples/sec
+
+RMTPP:
+  amazon: 9165.19 samples/sec
+  retweet: 18261.73 samples/sec
+  stackoverflow: 4497.08 samples/sec
+  taobao: 5537.16 samples/sec
+  taxi: 8181.94 samples/sec
+
+SAHP:
+  amazon: 6341.51 samples/sec
+  retweet: 8428.72 samples/sec
+  stackoverflow: 4781.08 samples/sec
+  taobao: 4546.79 samples/sec
+  taxi: 7505.58 samples/sec
+
+THP:
+  retweet: 8490.85 samples/sec
+  taxi: 7465.92 samples/sec

@@ -1,0 +1,44 @@
+Starting timed generation: SAHP on taobao
+Checkpoint: ./checkpoints/SAHP/taobao/20250729_172334/1547663_140473062724800_250729-172335/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15682
+Array Task ID: 6
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:58:05,668 - config.py[pid:2269856;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:58:07,036 - runner_config.py[pid:2269856;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:58:07,045 - runner_config.py[pid:2269856;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taobao/20250729_172334/2269856_140575416534080_250730-185805/SAHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 64 as number of prediction steps for dataset
+
+2. Generating 64 prediction steps...
+Generating 64 prediction steps...
+Processing batch 1...
+Original sequence length: 64, truncated to: 64 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/SAHP_20250730_185924.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/taobao/train.pkl
+Prediction steps: 64
+Total sequences processed: 1300
+Wall time: 72.40 seconds
+Sequences per second: 17.95
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 2.2688s (3.5%)
+  Thinning algorithm: 61.7296s (96.5%)
+  Total sampling time: 63.9984s
+  Total sampling calls: 100
+============================================================
+Completed timed generation: SAHP on taobao

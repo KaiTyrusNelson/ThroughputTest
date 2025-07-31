@@ -1,0 +1,12 @@
+{
+  "model_type": "SAHP",
+  "dataset": "train",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "samples_per_second": 4695.14,
+  "log_likelihood_per_event": -2.4347,
+  "total_events": 89096,
+  "total_sequences": 1401,
+  "walltime_seconds": 0.3,
+  "model_parameters": 19660,
+  "timestamp": "20250729_235107"
+}

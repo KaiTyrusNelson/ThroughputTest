@@ -1,0 +1,12 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "train",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "samples_per_second": 7216.33,
+  "log_likelihood_per_event": -2.5852,
+  "total_events": 89096,
+  "total_sequences": 1401,
+  "walltime_seconds": 0.19,
+  "model_parameters": 28704,
+  "timestamp": "20250730_002016"
+}

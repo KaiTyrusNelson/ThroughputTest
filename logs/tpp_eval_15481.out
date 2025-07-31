@@ -1,0 +1,19 @@
+Starting evaluation: IntensityFree on taxi
+Checkpoint: ./checkpoints/IntensityFree/taxi/20250729_184026/1552401_140364318291136_250729-184026/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15481
+Array Task ID: 22
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:39,085 - config.py[pid:1629445;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,130 - runner_config.py[pid:1629445;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,138 - runner_config.py[pid:1629445;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629445_139931392144448_250729-234539/IntensityFree_train_output.yaml[0m
+✓ Successfully loaded IntensityFree model and dataset
+Model parameters: 7,444
+Dataset sequences: 1400
+Log likelihood per event: -2.3976
+Total events: 50454
+Total sequences processed: 1400
+Walltime for evaluation: 0.16 seconds
+Samples per second: 9028.29
+Results logged to: ./results/IntensityFree_20250729_234540.json
+Completed evaluation: IntensityFree on taxi

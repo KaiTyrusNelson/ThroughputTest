@@ -1,0 +1,43 @@
+Starting evaluation: NHP on stackoverflow
+Checkpoint: ./checkpoints/NHP/stackoverflow/20250729_171913/1547362_140673095582912_250729-171913/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15500
+Array Task ID: 14
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:36,265 - config.py[pid:1632496;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:36,308 - runner_config.py[pid:1632496;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:36,316 - runner_config.py[pid:1632496;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/stackoverflow/20250729_171913/1632496_140645601928256_250729-235136/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 60,716
+Dataset sequences: 1401
+Batch size 2048 failed: CUDA out of memory. Tried to allocate 16.70 GiB. GPU 0 has a total capacity of 23.68 GiB of which 5.81 GiB is free. Including non-PyTorch memory, this process has 17.86 GiB memory in use. Of the allocated memory 17.19 GiB is allocated by PyTorch, and 446.49 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 1028
+[31;1m2025-07-29 23:51:37,915 - config.py[pid:1632496;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:37,919 - runner_config.py[pid:1632496;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:37,928 - runner_config.py[pid:1632496;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/stackoverflow/20250729_171913/1632496_140645601928256_250729-235137/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 60,716
+Dataset sequences: 1401
+Batch size 1028 failed: CUDA out of memory. Tried to allocate 12.26 GiB. GPU 0 has a total capacity of 23.68 GiB of which 5.90 GiB is free. Including non-PyTorch memory, this process has 17.77 GiB memory in use. Of the allocated memory 12.61 GiB is allocated by PyTorch, and 4.92 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 512
+[31;1m2025-07-29 23:51:38,166 - config.py[pid:1632496;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:38,169 - runner_config.py[pid:1632496;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:38,176 - runner_config.py[pid:1632496;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/stackoverflow/20250729_171913/1632496_140645601928256_250729-235138/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 60,716
+Dataset sequences: 1401
+Batch size 512 failed: CUDA out of memory. Tried to allocate 6.10 GiB. GPU 0 has a total capacity of 23.68 GiB of which 5.90 GiB is free. Including non-PyTorch memory, this process has 17.77 GiB memory in use. Of the allocated memory 12.38 GiB is allocated by PyTorch, and 5.15 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 256
+[31;1m2025-07-29 23:51:38,503 - config.py[pid:1632496;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:38,504 - runner_config.py[pid:1632496;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:38,511 - runner_config.py[pid:1632496;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/stackoverflow/20250729_171913/1632496_140645601928256_250729-235138/NHP_train_output.yaml[0m
+✓ Successfully loaded NHP model and dataset
+Model parameters: 60,716
+Dataset sequences: 1401
+Log likelihood per event: -2.1649
+Total events: 89096
+Total sequences processed: 1401
+Walltime for evaluation: 1.14 seconds
+Samples per second: 1223.96
+Results logged to: ./results/NHP_20250729_235139.json
+Completed evaluation: NHP on stackoverflow

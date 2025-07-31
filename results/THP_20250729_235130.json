@@ -1,0 +1,12 @@
+{
+  "model_type": "THP",
+  "dataset": "train",
+  "dataset_path": "./data/retweet/retweet/train.pkl",
+  "samples_per_second": 8490.85,
+  "log_likelihood_per_event": -4.1383,
+  "total_events": 360731,
+  "total_sequences": 9000,
+  "walltime_seconds": 1.06,
+  "model_parameters": 3644,
+  "timestamp": "20250729_235130"
+}

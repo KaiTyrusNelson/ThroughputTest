@@ -1,0 +1,9 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "retweet",
+  "num_steps": 264,
+  "total_sequences": 3072,
+  "wall_time_seconds": 3.79,
+  "sequences_per_second": 810.59,
+  "timestamp": "2025-07-30T19:48:51.024586"
+}

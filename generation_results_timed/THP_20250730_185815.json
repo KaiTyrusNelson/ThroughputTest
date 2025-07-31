@@ -1,0 +1,18 @@
+{
+  "model_type": "THP",
+  "dataset": "taobao",
+  "dataset_path": "./data/taobao/train.pkl",
+  "prediction_steps": 64,
+  "total_sequences": 1300,
+  "wall_time_seconds": 47.53,
+  "sequences_per_second": 27.35,
+  "timing_breakdown": {
+    "neural_time_seconds": 1.1999,
+    "thinning_time_seconds": 41.0931,
+    "total_sampling_time_seconds": 42.293,
+    "neural_percentage": 2.84,
+    "thinning_percentage": 97.16,
+    "total_sampling_calls": 100
+  },
+  "timestamp": "20250730_185815"
+}

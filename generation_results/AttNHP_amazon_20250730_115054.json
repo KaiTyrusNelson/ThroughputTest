@@ -1,0 +1,9 @@
+{
+  "model_type": "AttNHP",
+  "dataset": "amazon",
+  "num_steps": 94,
+  "total_sequences": 96,
+  "wall_time_seconds": 171.4,
+  "sequences_per_second": 0.56,
+  "timestamp": "2025-07-30T11:50:54.346232"
+}

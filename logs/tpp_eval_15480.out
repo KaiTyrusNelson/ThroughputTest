@@ -1,0 +1,503 @@
+Starting evaluation: AttNHP on amazon
+Checkpoint: ./checkpoints/AttNHP/amazon/20250729_184304/1552746_140101448402112_250729-184304/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15480
+Array Task ID: 21
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:38,438 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:38,486 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:38,493 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234538/AttNHP_train_output.yaml[0m
+Batch size 2048 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:39,651 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,655 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,662 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 1028 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 512
+[31;1m2025-07-29 23:45:39,683 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,683 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,691 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 512 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 256
+[31;1m2025-07-29 23:45:39,711 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,711 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,718 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 256 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 128
+[31;1m2025-07-29 23:45:39,740 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,741 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,748 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 128 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 64
+[31;1m2025-07-29 23:45:39,768 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,769 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,776 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 64 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 32
+[31;1m2025-07-29 23:45:39,795 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,796 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,803 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 32 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 16
+[31;1m2025-07-29 23:45:39,823 - config.py[pid:1629411;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,823 - runner_config.py[pid:1629411;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,831 - runner_config.py[pid:1629411;line:35:__init__] - INFO: Save the config to ./checkpoints/AttNHP/taxi/20250729_184500/1629411_139845734392896_250729-234539/AttNHP_train_output.yaml[0m
+Batch size 16 failed: Error(s) in loading state_dict for AttNHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for heads.0.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.0.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.0.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.1.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.1.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.2.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.2.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for heads.3.1.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for heads.3.1.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for inten_linear.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for inten_linear.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_event_emb.weight: copying a param with shape torch.Size([64, 80]) from checkpoint, the shape in current model is torch.Size([16, 32]).
+	size mismatch for layer_event_emb.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([16, 256]) from checkpoint, the shape in current model is torch.Size([10, 64]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Error: Could not successfully evaluate on any batch size.
+Completed evaluation: AttNHP on amazon

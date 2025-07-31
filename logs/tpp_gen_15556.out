@@ -1,0 +1,42 @@
+Starting generation: NHP on retweet
+Checkpoint: ./checkpoints/NHP/retweet/20250729_171833/1547206_140140744295616_250729-171833/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15556
+Array Task ID: 15
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading NHP model and dataset...
+[31;1m2025-07-30 11:46:27,251 - config.py[pid:2034239;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:46:27,284 - runner_config.py[pid:2034239;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-30 11:46:27,291 - runner_config.py[pid:2034239;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/retweet/20250729_171833/2034239_140424808522816_250730-114627/NHP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 264 as number of prediction steps for dataset
+
+2. Generating 264 prediction steps...
+Generating 264 prediction steps...
+Processing batch 1...
+Original sequence length: 96, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 97, truncated to: 2 events
+Processing batch 3...
+Original sequence length: 97, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/NHP_retweet_20250730_114641.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: NHP
+Dataset: ./data/retweet/retweet/train.pkl
+Prediction steps: 264
+Total sequences processed: 3072
+Wall time: 12.45 seconds
+Sequences per second: 246.78
+============================================================
+Completed generation: NHP on retweet

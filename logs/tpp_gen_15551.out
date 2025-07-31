@@ -1,0 +1,42 @@
+Starting generation: RMTPP on retweet
+Checkpoint: ./checkpoints/RMTPP/retweet/20250729_171829/1547139_140604324336832_250729-171829/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15551
+Array Task ID: 10
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading RMTPP model and dataset...
+[31;1m2025-07-30 11:46:22,922 - config.py[pid:2033691;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:46:23,037 - runner_config.py[pid:2033691;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-30 11:46:23,045 - runner_config.py[pid:2033691;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/retweet/20250729_171829/2033691_140116224353344_250730-114622/RMTPP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 264 as number of prediction steps for dataset
+
+2. Generating 264 prediction steps...
+Generating 264 prediction steps...
+Processing batch 1...
+Original sequence length: 96, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 97, truncated to: 2 events
+Processing batch 3...
+Original sequence length: 97, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/RMTPP_retweet_20250730_114625.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: RMTPP
+Dataset: ./data/retweet/retweet/train.pkl
+Prediction steps: 264
+Total sequences processed: 3072
+Wall time: 0.91 seconds
+Sequences per second: 3360.16
+============================================================
+Completed generation: RMTPP on retweet

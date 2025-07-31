@@ -1,0 +1,9 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "amazon",
+  "num_steps": 94,
+  "total_sequences": 3072,
+  "wall_time_seconds": 1.6,
+  "sequences_per_second": 1918.34,
+  "timestamp": "2025-07-30T11:46:26.307202"
+}

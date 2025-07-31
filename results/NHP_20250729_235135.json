@@ -1,0 +1,12 @@
+{
+  "model_type": "NHP",
+  "dataset": "train",
+  "dataset_path": "./data/taxi/taxi/train.pkl",
+  "samples_per_second": 3236.19,
+  "log_likelihood_per_event": 0.5693,
+  "total_events": 50454,
+  "total_sequences": 1400,
+  "walltime_seconds": 0.43,
+  "model_parameters": 232980,
+  "timestamp": "20250729_235135"
+}

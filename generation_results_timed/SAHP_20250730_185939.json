@@ -1,0 +1,18 @@
+{
+  "model_type": "SAHP",
+  "dataset": "stackoverflow",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "prediction_steps": 101,
+  "total_sequences": 1401,
+  "wall_time_seconds": 40.35,
+  "sequences_per_second": 34.72,
+  "timing_breakdown": {
+    "neural_time_seconds": 0.8462,
+    "thinning_time_seconds": 34.4092,
+    "total_sampling_time_seconds": 35.2554,
+    "neural_percentage": 2.4,
+    "thinning_percentage": 97.6,
+    "total_sampling_calls": 200
+  },
+  "timestamp": "20250730_185939"
+}

@@ -1,0 +1,167 @@
+Starting evaluation: SAHP on stackoverflow
+Checkpoint: ./checkpoints/SAHP/stackoverflow/20250729_172447/1547741_140336825558208_250729-172447/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15463
+Array Task ID: 4
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:25,508 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:25,683 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:25,691 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234525/SAHP_train_output.yaml[0m
+Batch size 2048 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:27,451 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,454 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,461 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 1028 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 512
+[31;1m2025-07-29 23:45:27,474 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,475 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,482 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 512 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 256
+[31;1m2025-07-29 23:45:27,495 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,495 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,502 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 256 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 128
+[31;1m2025-07-29 23:45:27,515 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,516 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,522 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 128 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 64
+[31;1m2025-07-29 23:45:27,535 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,535 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,542 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 64 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 32
+[31;1m2025-07-29 23:45:27,555 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,555 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,562 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 32 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Trying batch size: 16
+[31;1m2025-07-29 23:45:27,574 - config.py[pid:1628769;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,575 - runner_config.py[pid:1628769;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,582 - runner_config.py[pid:1628769;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1628769_140108244661312_250729-234527/SAHP_train_output.yaml[0m
+Batch size 16 failed: Error(s) in loading state_dict for SAHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([23, 64]) from checkpoint, the shape in current model is torch.Size([11, 16]).
+	size mismatch for layer_position_emb.div_term: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for layer_position_emb.layer_time_delta.weight: copying a param with shape torch.Size([32, 1]) from checkpoint, the shape in current model is torch.Size([8, 1]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([22]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([64, 64]) from checkpoint, the shape in current model is torch.Size([16, 16]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([16]).
+	size mismatch for mu.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for eta.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+	size mismatch for gamma.0.weight: copying a param with shape torch.Size([22, 64]) from checkpoint, the shape in current model is torch.Size([10, 16]).
+Error: Could not successfully evaluate on any batch size.
+Completed evaluation: SAHP on stackoverflow

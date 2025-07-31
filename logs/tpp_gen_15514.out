@@ -1,0 +1,40 @@
+Starting generation: THP on taxi
+Checkpoint: ./checkpoints/THP/taxi/20250729_172516/1547788_139709305361600_250729-172516/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15514
+Array Task ID: 0
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading THP model and dataset...
+[31;1m2025-07-30 11:30:02,363 - config.py[pid:2020089;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:02,422 - runner_config.py[pid:2020089;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:02,429 - runner_config.py[pid:2020089;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/2020089_139994721657920_250730-113002/THP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 37 as number of prediction steps for dataset
+
+2. Generating 37 prediction steps...
+Generating 37 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 38, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/THP_taxi_20250730_113011.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: THP
+Dataset: ./data/taxi/taxi/train.pkl
+Prediction steps: 37
+Total sequences processed: 1400
+Wall time: 7.29 seconds
+Sequences per second: 192.14
+============================================================
+Completed generation: THP on taxi

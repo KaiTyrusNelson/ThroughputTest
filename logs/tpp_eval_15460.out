@@ -1,0 +1,215 @@
+Starting evaluation: THP on retweet
+Checkpoint: ./checkpoints/THP/retweet/20250729_172611/1547843_140527782921408_250729-172611/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15460
+Array Task ID: 1
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:25,508 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:25,636 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:25,645 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234525/THP_train_output.yaml[0m
+Batch size 2048 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:27,453 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,456 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,463 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 1028 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 512
+[31;1m2025-07-29 23:45:27,478 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,478 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,485 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 512 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 256
+[31;1m2025-07-29 23:45:27,499 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,500 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,506 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 256 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 128
+[31;1m2025-07-29 23:45:27,521 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,521 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,528 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 128 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 64
+[31;1m2025-07-29 23:45:27,542 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,542 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,549 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 64 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 32
+[31;1m2025-07-29 23:45:27,563 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,564 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,571 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 32 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Trying batch size: 16
+[31;1m2025-07-29 23:45:27,585 - config.py[pid:1628768;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:27,585 - runner_config.py[pid:1628768;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:27,592 - runner_config.py[pid:1628768;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/taxi/20250729_172516/1628768_140072330880064_250729-234527/THP_train_output.yaml[0m
+Batch size 16 failed: Error(s) in loading state_dict for THP:
+	size mismatch for factor_intensity_base: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for factor_intensity_decay: copying a param with shape torch.Size([1, 3]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([4, 16]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_temporal_encoding.div_term: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for layer_intensity_hidden.weight: copying a param with shape torch.Size([3, 16]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity_hidden.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for softplus.log_beta: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.1.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for stack_layers.0.self_attn.linears.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for stack_layers.0.feed_forward.0.weight: copying a param with shape torch.Size([32, 16]) from checkpoint, the shape in current model is torch.Size([256, 128]).
+	size mismatch for stack_layers.0.feed_forward.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for stack_layers.0.feed_forward.2.weight: copying a param with shape torch.Size([16, 32]) from checkpoint, the shape in current model is torch.Size([128, 256]).
+	size mismatch for stack_layers.0.feed_forward.2.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([128]).
+Error: Could not successfully evaluate on any batch size.
+Completed evaluation: THP on retweet

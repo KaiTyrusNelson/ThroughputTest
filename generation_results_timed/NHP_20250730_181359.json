@@ -1,0 +1,18 @@
+{
+  "model_type": "NHP",
+  "dataset": "amazon",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "prediction_steps": 94,
+  "total_sequences": 3072,
+  "wall_time_seconds": 33.49,
+  "sequences_per_second": 91.73,
+  "timing_breakdown": {
+    "neural_time_seconds": 20.9343,
+    "thinning_time_seconds": 12.37,
+    "total_sampling_time_seconds": 33.3043,
+    "neural_percentage": 62.86,
+    "thinning_percentage": 37.14,
+    "total_sampling_calls": 300
+  },
+  "timestamp": "20250730_181359"
+}

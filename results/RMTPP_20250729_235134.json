@@ -1,0 +1,12 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "train",
+  "dataset_path": "./data/retweet/retweet/train.pkl",
+  "samples_per_second": 18261.73,
+  "log_likelihood_per_event": -4.218,
+  "total_events": 360731,
+  "total_sequences": 9000,
+  "walltime_seconds": 0.49,
+  "model_parameters": 697,
+  "timestamp": "20250729_235134"
+}

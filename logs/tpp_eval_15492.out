@@ -1,0 +1,27 @@
+Starting evaluation: SAHP on amazon
+Checkpoint: ./checkpoints/SAHP/amazon/20250729_172150/1547579_140565013820608_250729-172150/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15492
+Array Task ID: 6
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:27,504 - config.py[pid:1632086;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:27,716 - runner_config.py[pid:1632086;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:27,724 - runner_config.py[pid:1632086;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/amazon/20250729_172150/1632086_140279155524672_250729-235127/SAHP_train_output.yaml[0m
+✓ Successfully loaded SAHP model and dataset
+Model parameters: 8,976
+Dataset sequences: 6454
+Batch size 2048 failed: CUDA out of memory. Tried to allocate 5.68 GiB. GPU 0 has a total capacity of 23.68 GiB of which 4.53 GiB is free. Including non-PyTorch memory, this process has 19.14 GiB memory in use. Of the allocated memory 18.87 GiB is allocated by PyTorch, and 27.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 1028
+[31;1m2025-07-29 23:51:29,633 - config.py[pid:1632086;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:29,636 - runner_config.py[pid:1632086;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:29,644 - runner_config.py[pid:1632086;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/amazon/20250729_172150/1632086_140279155524672_250729-235129/SAHP_train_output.yaml[0m
+✓ Successfully loaded SAHP model and dataset
+Model parameters: 8,976
+Dataset sequences: 6454
+Log likelihood per event: -2.1504
+Total events: 281923
+Total sequences processed: 6454
+Walltime for evaluation: 1.02 seconds
+Samples per second: 6341.51
+Results logged to: ./results/SAHP_20250729_235130.json
+Completed evaluation: SAHP on amazon

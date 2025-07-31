@@ -1,0 +1,19 @@
+Starting evaluation: IntensityFree on taobao
+Checkpoint: ./checkpoints/IntensityFree/taobao/20250729_184040/1552556_140019626476736_250729-184040/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15509
+Array Task ID: 23
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:49,646 - config.py[pid:1632906;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:49,701 - runner_config.py[pid:1632906;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:49,709 - runner_config.py[pid:1632906;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taobao/20250729_184040/1632906_139944197321792_250729-235149/IntensityFree_train_output.yaml[0m
+✓ Successfully loaded IntensityFree model and dataset
+Model parameters: 28,059
+Dataset sequences: 1300
+Log likelihood per event: -0.8377
+Total events: 73905
+Total sequences processed: 1300
+Walltime for evaluation: 0.16 seconds
+Samples per second: 7886.08
+Results logged to: ./results/IntensityFree_20250729_235151.json
+Completed evaluation: IntensityFree on taobao

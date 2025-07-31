@@ -1,0 +1,12 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "train",
+  "dataset_path": "./data/retweet/retweet/train.pkl",
+  "samples_per_second": 26162.73,
+  "log_likelihood_per_event": -1074.8716,
+  "total_events": 360731,
+  "total_sequences": 9000,
+  "walltime_seconds": 0.34,
+  "model_parameters": 26253,
+  "timestamp": "20250729_235154"
+}

@@ -1,0 +1,9 @@
+{
+  "model_type": "THP",
+  "dataset": "taxi",
+  "num_steps": 38,
+  "total_sequences": 1400,
+  "wall_time_seconds": 12.62,
+  "sequences_per_second": 110.93,
+  "timestamp": "2025-07-30T11:46:20.168219"
+}

@@ -1,0 +1,12 @@
+{
+  "model_type": "AttNHP",
+  "dataset": "train",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "samples_per_second": 47.87,
+  "log_likelihood_per_event": -2.1591,
+  "total_events": 89096,
+  "total_sequences": 1401,
+  "walltime_seconds": 29.27,
+  "model_parameters": 42796,
+  "timestamp": "20250729_235215"
+}

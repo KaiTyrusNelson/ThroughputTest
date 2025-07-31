@@ -1,0 +1,9 @@
+{
+  "model_type": "SAHP",
+  "dataset": "taobao",
+  "num_steps": 64,
+  "total_sequences": 1300,
+  "wall_time_seconds": 13.85,
+  "sequences_per_second": 93.88,
+  "timestamp": "2025-07-30T11:46:21.384282"
+}

@@ -1,0 +1,12 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "train",
+  "dataset_path": "./data/taobao/train.pkl",
+  "samples_per_second": 5537.16,
+  "log_likelihood_per_event": -1.1255,
+  "total_events": 73905,
+  "total_sequences": 1300,
+  "walltime_seconds": 0.23,
+  "model_parameters": 1187,
+  "timestamp": "20250730_000150"
+}

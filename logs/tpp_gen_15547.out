@@ -1,0 +1,42 @@
+Starting generation: SAHP on amazon
+Checkpoint: ./checkpoints/SAHP/amazon/20250729_172150/1547579_140565013820608_250729-172150/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15547
+Array Task ID: 6
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading SAHP model and dataset...
+[31;1m2025-07-30 11:46:05,468 - config.py[pid:2033119;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:46:05,507 - runner_config.py[pid:2033119;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 11:46:05,515 - runner_config.py[pid:2033119;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/amazon/20250729_172150/2033119_140096114795584_250730-114605/SAHP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 94 as number of prediction steps for dataset
+
+2. Generating 94 prediction steps...
+Generating 94 prediction steps...
+Processing batch 1...
+Original sequence length: 94, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 93, truncated to: 2 events
+Processing batch 3...
+Original sequence length: 93, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/SAHP_amazon_20250730_114626.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/amazon/amazon/train.pkl
+Prediction steps: 94
+Total sequences processed: 3072
+Wall time: 18.92 seconds
+Sequences per second: 162.34
+============================================================
+Completed generation: SAHP on amazon

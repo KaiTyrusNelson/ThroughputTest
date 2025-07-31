@@ -1,0 +1,19 @@
+Starting evaluation: SAHP on taxi
+Checkpoint: ./checkpoints/SAHP/taxi/20250729_171930/1547411_140475471013056_250729-171930/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15488
+Array Task ID: 2
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:27,423 - config.py[pid:1632065;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:27,479 - runner_config.py[pid:1632065;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:27,487 - runner_config.py[pid:1632065;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/1632065_139642913965120_250729-235127/SAHP_train_output.yaml[0m
+✓ Successfully loaded SAHP model and dataset
+Model parameters: 2,476
+Dataset sequences: 1400
+Log likelihood per event: 0.3233
+Total events: 50454
+Total sequences processed: 1400
+Walltime for evaluation: 0.20 seconds
+Samples per second: 7051.88
+Results logged to: ./results/SAHP_20250729_235129.json
+Completed evaluation: SAHP on taxi

@@ -1,0 +1,27 @@
+Starting evaluation: SAHP on stackoverflow
+Checkpoint: ./checkpoints/SAHP/stackoverflow/20250729_172447/1547741_140336825558208_250729-172447/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15490
+Array Task ID: 4
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:27,505 - config.py[pid:1632082;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:27,659 - runner_config.py[pid:1632082;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:27,667 - runner_config.py[pid:1632082;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/stackoverflow/20250729_172447/1632082_139634856907840_250729-235127/SAHP_train_output.yaml[0m
+✓ Successfully loaded SAHP model and dataset
+Model parameters: 19,660
+Dataset sequences: 1401
+Batch size 2048 failed: CUDA out of memory. Tried to allocate 5.74 GiB. GPU 0 has a total capacity of 23.68 GiB of which 4.41 GiB is free. Including non-PyTorch memory, this process has 19.26 GiB memory in use. Of the allocated memory 18.99 GiB is allocated by PyTorch, and 28.73 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Trying batch size: 1028
+[31;1m2025-07-29 23:51:29,557 - config.py[pid:1632082;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:29,561 - runner_config.py[pid:1632082;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:29,568 - runner_config.py[pid:1632082;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/stackoverflow/20250729_172447/1632082_139634856907840_250729-235129/SAHP_train_output.yaml[0m
+✓ Successfully loaded SAHP model and dataset
+Model parameters: 19,660
+Dataset sequences: 1401
+Log likelihood per event: -2.4347
+Total events: 89096
+Total sequences processed: 1401
+Walltime for evaluation: 0.29 seconds
+Samples per second: 4781.08
+Results logged to: ./results/SAHP_20250729_235129.json
+Completed evaluation: SAHP on stackoverflow

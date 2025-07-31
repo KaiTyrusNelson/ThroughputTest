@@ -1,0 +1,48 @@
+Starting timed generation: RMTPP on amazon
+Checkpoint: ./checkpoints/RMTPP/amazon/20250729_171829/1547140_140226742162624_250729-171829/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15690
+Array Task ID: 14
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:59:42,170 - config.py[pid:2270765;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:59:42,200 - runner_config.py[pid:2270765;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-30 18:59:42,208 - runner_config.py[pid:2270765;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/amazon/20250729_171829/2270765_139890016035904_250730-185942/RMTPP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 94 as number of prediction steps for dataset
+
+2. Generating 94 prediction steps...
+Generating 94 prediction steps...
+Processing batch 1...
+Original sequence length: 94, truncated to: 94 events
+Processing batch 2...
+Original sequence length: 94, truncated to: 94 events
+Processing batch 3...
+Original sequence length: 94, truncated to: 94 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/RMTPP_20250730_185950.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: RMTPP
+Dataset: ./data/amazon/amazon/train.pkl
+Prediction steps: 94
+Total sequences processed: 6144
+Wall time: 6.63 seconds
+Sequences per second: 926.16
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 1.3736s (23.1%)
+  Thinning algorithm: 4.5748s (76.9%)
+  Total sampling time: 5.9484s
+  Total sampling calls: 300
+============================================================
+Completed timed generation: RMTPP on amazon

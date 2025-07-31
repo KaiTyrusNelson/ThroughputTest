@@ -1,0 +1,12 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "train",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "samples_per_second": 4497.08,
+  "log_likelihood_per_event": -2.7143,
+  "total_events": 89096,
+  "total_sequences": 1401,
+  "walltime_seconds": 0.31,
+  "model_parameters": 143682,
+  "timestamp": "20250729_235133"
+}

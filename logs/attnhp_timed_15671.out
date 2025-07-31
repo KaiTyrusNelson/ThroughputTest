@@ -1,0 +1,140 @@
+Starting AttNHP timed generation: AttNHP on taxi
+Checkpoint: ./checkpoints/AttNHP/taxi/20250729_184302/1552702_140261229237440_250729-184302/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15671
+Array Task ID: 0
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:28:12,987 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:28:13,018 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:28:13,025 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-182812/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+CUDA OOM with batch size 2048: CUDA out of memory. Tried to allocate 6.34 GiB. GPU 0 has a total capacity of 23.68 GiB of which 5.34 GiB is free. Including non-PyTorch memory, this process has 18.33 GiB memory in use. Of the allocated memory 17.91 GiB is allocated by PyTorch, and 190.82 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 1024
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:28:15,729 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:28:15,733 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:28:15,742 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-182815/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+CUDA OOM with batch size 1024: CUDA out of memory. Tried to allocate 2.32 GiB. GPU 0 has a total capacity of 23.68 GiB of which 938.88 MiB is free. Including non-PyTorch memory, this process has 22.75 GiB memory in use. Of the allocated memory 17.73 GiB is allocated by PyTorch, and 4.78 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 512
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:28:16,519 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:28:16,522 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:28:16,529 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-182816/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+CUDA OOM with batch size 512: CUDA out of memory. Tried to allocate 5.51 GiB. GPU 0 has a total capacity of 23.68 GiB of which 202.88 MiB is free. Including non-PyTorch memory, this process has 23.47 GiB memory in use. Of the allocated memory 17.86 GiB is allocated by PyTorch, and 5.37 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 256
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:28:17,091 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:28:17,095 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:28:17,103 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-182817/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+CUDA OOM with batch size 256: CUDA out of memory. Tried to allocate 3.86 GiB. GPU 0 has a total capacity of 23.68 GiB of which 3.42 GiB is free. Including non-PyTorch memory, this process has 20.25 GiB memory in use. Of the allocated memory 14.05 GiB is allocated by PyTorch, and 5.96 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 128
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:28:27,633 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:28:27,637 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:28:27,645 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-182827/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+CUDA OOM with batch size 128: CUDA out of memory. Tried to allocate 4.67 GiB. GPU 0 has a total capacity of 23.68 GiB of which 1.24 GiB is free. Including non-PyTorch memory, this process has 22.43 GiB memory in use. Of the allocated memory 14.34 GiB is allocated by PyTorch, and 7.85 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 64
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:29:05,343 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:29:05,347 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:29:05,355 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-182905/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+CUDA OOM with batch size 64: CUDA out of memory. Tried to allocate 6.31 GiB. GPU 0 has a total capacity of 23.68 GiB of which 6.19 GiB is free. Including non-PyTorch memory, this process has 17.48 GiB memory in use. Of the allocated memory 12.30 GiB is allocated by PyTorch, and 4.94 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 32
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:30:34,123 - config.py[pid:2256068;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:30:34,127 - runner_config.py[pid:2256068;line:140:update_config] - CRITICAL: train model AttNHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:30:34,135 - runner_config.py[pid:2256068;line:35:__init__] - INFO: Save the config to ./test_checkpoints/AttNHP/taxi/20250729_183513/2256068_140483466884160_250730-183034/AttNHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/AttNHP_20250730_183145.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: AttNHP
+Dataset: ./data/taxi/taxi/train.pkl
+Prediction steps: 38
+Total sequences processed: 32
+Wall time: 71.12 seconds
+Sequences per second: 0.45
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 4.7973s (6.4%)
+  Thinning algorithm: 69.9703s (93.6%)
+  Total sampling time: 74.7676s
+  Total sampling calls: 100
+============================================================
+Completed AttNHP timed generation: AttNHP on taxi

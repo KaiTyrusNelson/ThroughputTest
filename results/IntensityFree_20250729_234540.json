@@ -1,0 +1,12 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "train",
+  "dataset_path": "./data/taxi/taxi/train.pkl",
+  "samples_per_second": 9028.29,
+  "log_likelihood_per_event": -2.3976,
+  "total_events": 50454,
+  "total_sequences": 1400,
+  "walltime_seconds": 0.16,
+  "model_parameters": 7444,
+  "timestamp": "20250729_234540"
+}

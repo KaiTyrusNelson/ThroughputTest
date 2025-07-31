@@ -1,0 +1,44 @@
+Starting timed generation: SAHP on taxi
+Checkpoint: ./checkpoints/SAHP/taxi/20250729_171930/1547411_140475471013056_250729-171930/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15681
+Array Task ID: 5
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:57:26,547 - config.py[pid:2269413;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:57:26,565 - runner_config.py[pid:2269413;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:57:26,572 - runner_config.py[pid:2269413;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/taxi/20250729_171930/2269413_140363726337088_250730-185726/SAHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/SAHP_20250730_185806.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/taxi/taxi/train.pkl
+Prediction steps: 38
+Total sequences processed: 1400
+Wall time: 38.32 seconds
+Sequences per second: 36.54
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 0.7838s (2.1%)
+  Thinning algorithm: 35.8480s (97.9%)
+  Total sampling time: 36.6318s
+  Total sampling calls: 100
+============================================================
+Completed timed generation: SAHP on taxi

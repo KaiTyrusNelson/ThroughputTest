@@ -1,0 +1,12 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "train",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "samples_per_second": 22836.98,
+  "log_likelihood_per_event": -21.216,
+  "total_events": 281923,
+  "total_sequences": 6454,
+  "walltime_seconds": 0.28,
+  "model_parameters": 27930,
+  "timestamp": "20250729_235155"
+}

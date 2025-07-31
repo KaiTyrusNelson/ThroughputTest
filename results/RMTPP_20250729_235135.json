@@ -1,0 +1,12 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "train",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "samples_per_second": 9165.19,
+  "log_likelihood_per_event": -2.2026,
+  "total_events": 281923,
+  "total_sequences": 6454,
+  "walltime_seconds": 0.7,
+  "model_parameters": 37552,
+  "timestamp": "20250729_235135"
+}

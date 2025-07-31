@@ -1,0 +1,9 @@
+{
+  "model_type": "SAHP",
+  "dataset": "amazon",
+  "num_steps": 94,
+  "total_sequences": 3072,
+  "wall_time_seconds": 18.92,
+  "sequences_per_second": 162.34,
+  "timestamp": "2025-07-30T11:46:26.543382"
+}

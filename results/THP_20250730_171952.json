@@ -1,0 +1,12 @@
+{
+  "model_type": "THP",
+  "dataset": "train",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "samples_per_second": 2419.33,
+  "log_likelihood_per_event": -2.2522,
+  "total_events": 89096,
+  "total_sequences": 1401,
+  "walltime_seconds": 0.58,
+  "model_parameters": 3512,
+  "timestamp": "20250730_171952"
+}

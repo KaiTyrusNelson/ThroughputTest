@@ -1,0 +1,9 @@
+{
+  "model_type": "THP",
+  "dataset": "retweet",
+  "num_steps": 264,
+  "total_sequences": 3072,
+  "wall_time_seconds": 11.92,
+  "sequences_per_second": 257.64,
+  "timestamp": "2025-07-30T11:46:19.729757"
+}

@@ -1,0 +1,19 @@
+Starting evaluation: SAHP on retweet
+Checkpoint: ./checkpoints/SAHP/retweet/20250729_172031/1547474_140470562505920_250729-172031/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15491
+Array Task ID: 5
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:27,499 - config.py[pid:1632074;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:27,643 - runner_config.py[pid:1632074;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:27,650 - runner_config.py[pid:1632074;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/retweet/20250729_172031/1632074_140216703542336_250729-235127/SAHP_train_output.yaml[0m
+✓ Successfully loaded SAHP model and dataset
+Model parameters: 10,038
+Dataset sequences: 9000
+Log likelihood per event: -4.1179
+Total events: 360731
+Total sequences processed: 9000
+Walltime for evaluation: 1.08 seconds
+Samples per second: 8332.43
+Results logged to: ./results/SAHP_20250729_235130.json
+Completed evaluation: SAHP on retweet

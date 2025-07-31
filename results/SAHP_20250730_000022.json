@@ -1,0 +1,12 @@
+{
+  "model_type": "SAHP",
+  "dataset": "train",
+  "dataset_path": "./data/taobao/train.pkl",
+  "samples_per_second": 4546.79,
+  "log_likelihood_per_event": 0.2545,
+  "total_events": 73905,
+  "total_sequences": 1300,
+  "walltime_seconds": 0.29,
+  "model_parameters": 5970,
+  "timestamp": "20250730_000022"
+}

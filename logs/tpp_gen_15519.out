@@ -1,0 +1,42 @@
+Starting generation: SAHP on retweet
+Checkpoint: ./checkpoints/SAHP/retweet/20250729_172031/1547474_140470562505920_250729-172031/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15519
+Array Task ID: 5
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading SAHP model and dataset...
+[31;1m2025-07-30 11:30:02,363 - config.py[pid:2020098;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:02,398 - runner_config.py[pid:2020098;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:02,405 - runner_config.py[pid:2020098;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/retweet/20250729_172031/2020098_140140587545664_250730-113002/SAHP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 110 as number of prediction steps for dataset
+
+2. Generating 110 prediction steps...
+Generating 110 prediction steps...
+Processing batch 1...
+Original sequence length: 96, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 97, truncated to: 2 events
+Processing batch 3...
+Original sequence length: 97, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/SAHP_retweet_20250730_113017.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/retweet/retweet/train.pkl
+Prediction steps: 110
+Total sequences processed: 3072
+Wall time: 12.65 seconds
+Sequences per second: 242.79
+============================================================
+Completed generation: SAHP on retweet

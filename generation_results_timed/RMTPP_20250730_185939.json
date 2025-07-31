@@ -1,0 +1,18 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "stackoverflow",
+  "dataset_path": "./data/stackoverflow/so_v2/train.pkl",
+  "prediction_steps": 101,
+  "total_sequences": 1401,
+  "wall_time_seconds": 7.05,
+  "sequences_per_second": 198.81,
+  "timing_breakdown": {
+    "neural_time_seconds": 3.2663,
+    "thinning_time_seconds": 3.5231,
+    "total_sampling_time_seconds": 6.7894,
+    "neural_percentage": 48.11,
+    "thinning_percentage": 51.89,
+    "total_sampling_calls": 100
+  },
+  "timestamp": "20250730_185939"
+}

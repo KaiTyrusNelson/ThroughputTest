@@ -1,0 +1,12 @@
+{
+  "model_type": "NHP",
+  "dataset": "train",
+  "dataset_path": "./data/taobao/train.pkl",
+  "samples_per_second": 1442.5,
+  "log_likelihood_per_event": 0.9773,
+  "total_events": 73905,
+  "total_sequences": 1300,
+  "walltime_seconds": 0.9,
+  "model_parameters": 234786,
+  "timestamp": "20250729_235136"
+}

@@ -1,0 +1,12 @@
+{
+  "model_type": "THP",
+  "dataset": "train",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "samples_per_second": 3850.33,
+  "log_likelihood_per_event": -2.3366,
+  "total_events": 281923,
+  "total_sequences": 6454,
+  "walltime_seconds": 1.68,
+  "model_parameters": 11648,
+  "timestamp": "20250730_171921"
+}

@@ -1,0 +1,18 @@
+{
+  "model_type": "SAHP",
+  "dataset": "taxi",
+  "dataset_path": "./data/taxi/taxi/train.pkl",
+  "prediction_steps": 38,
+  "total_sequences": 1400,
+  "wall_time_seconds": 23.2,
+  "sequences_per_second": 60.36,
+  "timing_breakdown": {
+    "neural_time_seconds": 17.5992,
+    "thinning_time_seconds": 20.7317,
+    "total_sampling_time_seconds": 38.3309,
+    "neural_percentage": 45.91,
+    "thinning_percentage": 54.09,
+    "total_sampling_calls": 200
+  },
+  "timestamp": "20250730_181201"
+}

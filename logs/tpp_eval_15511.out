@@ -1,0 +1,19 @@
+Starting evaluation: IntensityFree on retweet
+Checkpoint: ./checkpoints/IntensityFree/retweet/20250729_184026/1552402_140613232231616_250729-184026/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15511
+Array Task ID: 25
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:52,770 - config.py[pid:1632979;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:52,801 - runner_config.py[pid:1632979;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:52,809 - runner_config.py[pid:1632979;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/retweet/20250729_184026/1632979_139987314570304_250729-235152/IntensityFree_train_output.yaml[0m
+✓ Successfully loaded IntensityFree model and dataset
+Model parameters: 26,253
+Dataset sequences: 9000
+Log likelihood per event: -1074.8716
+Total events: 360731
+Total sequences processed: 9000
+Walltime for evaluation: 0.34 seconds
+Samples per second: 26162.73
+Results logged to: ./results/IntensityFree_20250729_235154.json
+Completed evaluation: IntensityFree on retweet

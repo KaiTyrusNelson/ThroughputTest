@@ -1,0 +1,9 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "stackoverflow",
+  "num_steps": 101,
+  "total_sequences": 1401,
+  "wall_time_seconds": 0.77,
+  "sequences_per_second": 1815.69,
+  "timestamp": "2025-07-30T11:46:46.507851"
+}

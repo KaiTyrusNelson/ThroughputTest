@@ -1,0 +1,44 @@
+Starting timed generation: RMTPP on taxi
+Checkpoint: ./checkpoints/RMTPP/taxi/20250729_171828/1547089_139743946478784_250729-171828/models
+Dataset: ./data/taxi/taxi/train.pkl
+Job ID: 15686
+Array Task ID: 10
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:59:01,395 - config.py[pid:2270384;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:59:02,184 - runner_config.py[pid:2270384;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-30 18:59:02,192 - runner_config.py[pid:2270384;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/2270384_139635516838976_250730-185901/RMTPP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 38 as number of prediction steps for dataset
+
+2. Generating 38 prediction steps...
+Generating 38 prediction steps...
+Processing batch 1...
+Original sequence length: 38, truncated to: 38 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/RMTPP_20250730_185927.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: RMTPP
+Dataset: ./data/taxi/taxi/train.pkl
+Prediction steps: 38
+Total sequences processed: 1400
+Wall time: 19.34 seconds
+Sequences per second: 72.38
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 18.7038s (97.8%)
+  Thinning algorithm: 0.4166s (2.2%)
+  Total sampling time: 19.1204s
+  Total sampling calls: 100
+============================================================
+Completed timed generation: RMTPP on taxi

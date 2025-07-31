@@ -1,0 +1,44 @@
+Starting timed generation: NHP on stackoverflow
+Checkpoint: ./checkpoints/NHP/stackoverflow/20250729_171913/1547362_140673095582912_250729-171913/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15693
+Array Task ID: 17
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:59:53,406 - config.py[pid:2270914;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:59:53,436 - runner_config.py[pid:2270914;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:59:53,444 - runner_config.py[pid:2270914;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/stackoverflow/20250729_171913/2270914_140140368692288_250730-185953/NHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 101 as number of prediction steps for dataset
+
+2. Generating 101 prediction steps...
+Generating 101 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 101 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/NHP_20250730_190006.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: NHP
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 101
+Total sequences processed: 1401
+Wall time: 11.81 seconds
+Sequences per second: 118.58
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 3.8084s (47.1%)
+  Thinning algorithm: 4.2777s (52.9%)
+  Total sampling time: 8.0861s
+  Total sampling calls: 100
+============================================================
+Completed timed generation: NHP on stackoverflow

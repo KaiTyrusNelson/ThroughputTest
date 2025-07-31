@@ -1,0 +1,62 @@
+Starting timed generation: SAHP on stackoverflow
+Checkpoint: ./checkpoints/SAHP/stackoverflow/20250729_172447/1547741_140336825558208_250729-172447/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15683
+Array Task ID: 7
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:58:09,195 - config.py[pid:2269906;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:58:09,429 - runner_config.py[pid:2269906;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:58:09,441 - runner_config.py[pid:2269906;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/stackoverflow/20250729_172447/2269906_140128528012352_250730-185809/SAHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 101 as number of prediction steps for dataset
+
+2. Generating 101 prediction steps...
+Generating 101 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 101 events
+CUDA OOM with batch size 2048: CUDA out of memory. Tried to allocate 8.73 GiB. GPU 0 has a total capacity of 23.68 GiB of which 8.69 GiB is free. Including non-PyTorch memory, this process has 14.98 GiB memory in use. Of the allocated memory 8.93 GiB is allocated by PyTorch, and 5.81 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Trying with batch size: 1024
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:58:59,061 - config.py[pid:2269906;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:58:59,067 - runner_config.py[pid:2269906;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 18:58:59,081 - runner_config.py[pid:2269906;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/stackoverflow/20250729_172447/2269906_140128528012352_250730-185859/SAHP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 101 as number of prediction steps for dataset
+
+2. Generating 101 prediction steps...
+Generating 101 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 101 events
+Processing batch 2...
+Original sequence length: 101, truncated to: 101 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/SAHP_20250730_185939.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 101
+Total sequences processed: 1401
+Wall time: 40.35 seconds
+Sequences per second: 34.72
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 0.8462s (2.4%)
+  Thinning algorithm: 34.4092s (97.6%)
+  Total sampling time: 35.2554s
+  Total sampling calls: 200
+============================================================
+Completed timed generation: SAHP on stackoverflow

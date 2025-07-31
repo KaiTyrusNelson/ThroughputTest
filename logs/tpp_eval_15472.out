@@ -1,0 +1,79 @@
+Starting evaluation: NHP on taobao
+Checkpoint: ./checkpoints/NHP/taobao/20250729_171910/1547333_140088285840576_250729-171910/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15472
+Array Task ID: 13
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:30,528 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:30,648 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:30,656 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234530/NHP_train_output.yaml[0m
+Batch size 2048 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:32,021 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,024 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,031 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 1028 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 512
+[31;1m2025-07-29 23:45:32,043 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,043 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,051 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 512 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 256
+[31;1m2025-07-29 23:45:32,063 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,064 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,070 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 256 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 128
+[31;1m2025-07-29 23:45:32,081 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,082 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,090 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 128 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 64
+[31;1m2025-07-29 23:45:32,101 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,102 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,109 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 64 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 32
+[31;1m2025-07-29 23:45:32,120 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,120 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,127 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 32 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 16
+[31;1m2025-07-29 23:45:32,138 - config.py[pid:1629030;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,139 - runner_config.py[pid:1629030;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,146 - runner_config.py[pid:1629030;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taxi/20250729_171832/1629030_139846727795776_250729-234532/NHP_train_output.yaml[0m
+Batch size 16 failed: Error(s) in loading state_dict for NHP:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for layer_intensity.0.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for layer_intensity.0.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+	size mismatch for layer_intensity.1.log_beta: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([10]).
+Error: Could not successfully evaluate on any batch size.
+Completed evaluation: NHP on taobao

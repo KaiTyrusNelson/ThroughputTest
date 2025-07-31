@@ -1,0 +1,9 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "taobao",
+  "num_steps": 64,
+  "total_sequences": 1300,
+  "wall_time_seconds": 0.49,
+  "sequences_per_second": 2646.2,
+  "timestamp": "2025-07-30T19:49:37.883715"
+}

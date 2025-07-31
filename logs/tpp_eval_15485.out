@@ -1,0 +1,19 @@
+Starting evaluation: IntensityFree on amazon
+Checkpoint: ./checkpoints/IntensityFree/amazon/20250729_184030/1552444_139833835279552_250729-184030/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15485
+Array Task ID: 26
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:53,848 - config.py[pid:1633005;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:53,898 - runner_config.py[pid:1633005;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:53,906 - runner_config.py[pid:1633005;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/amazon/20250729_184030/1633005_140622729942080_250729-235153/IntensityFree_train_output.yaml[0m
+✓ Successfully loaded IntensityFree model and dataset
+Model parameters: 27,930
+Dataset sequences: 6454
+Log likelihood per event: -21.2160
+Total events: 281923
+Total sequences processed: 6454
+Walltime for evaluation: 0.28 seconds
+Samples per second: 22836.98
+Results logged to: ./results/IntensityFree_20250729_235155.json
+Completed evaluation: IntensityFree on amazon

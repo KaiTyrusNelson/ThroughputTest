@@ -1,0 +1,9 @@
+{
+  "model_type": "AttNHP",
+  "dataset": "retweet",
+  "num_steps": 264,
+  "total_sequences": 192,
+  "wall_time_seconds": 138.07,
+  "sequences_per_second": 1.39,
+  "timestamp": "2025-07-30T11:50:31.043961"
+}

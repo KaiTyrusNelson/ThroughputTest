@@ -1,0 +1,40 @@
+Starting generation: RMTPP on taobao
+Checkpoint: ./checkpoints/RMTPP/taobao/20250729_171829/1547138_140181880394944_250729-171829/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15522
+Array Task ID: 8
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading RMTPP model and dataset...
+[31;1m2025-07-30 11:30:08,447 - config.py[pid:2020361;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:09,304 - runner_config.py[pid:2020361;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:09,317 - runner_config.py[pid:2020361;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taobao/20250729_171829/2020361_140338447221824_250730-113008/RMTPP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 50 as number of prediction steps for dataset
+
+2. Generating 50 prediction steps...
+Generating 50 prediction steps...
+Processing batch 1...
+Original sequence length: 64, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 64, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/RMTPP_taobao_20250730_113015.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: RMTPP
+Dataset: ./data/taobao/train.pkl
+Prediction steps: 50
+Total sequences processed: 1300
+Wall time: 2.20 seconds
+Sequences per second: 590.70
+============================================================
+Completed generation: RMTPP on taobao

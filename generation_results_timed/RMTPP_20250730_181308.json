@@ -1,0 +1,18 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "amazon",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "prediction_steps": 94,
+  "total_sequences": 3072,
+  "wall_time_seconds": 3.32,
+  "sequences_per_second": 925.41,
+  "timing_breakdown": {
+    "neural_time_seconds": 0.8937,
+    "thinning_time_seconds": 2.2727,
+    "total_sampling_time_seconds": 3.1664,
+    "neural_percentage": 28.22,
+    "thinning_percentage": 71.78,
+    "total_sampling_calls": 300
+  },
+  "timestamp": "20250730_181308"
+}

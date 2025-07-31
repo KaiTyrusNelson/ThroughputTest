@@ -1,0 +1,18 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "taxi",
+  "dataset_path": "./data/taxi/taxi/train.pkl",
+  "prediction_steps": 38,
+  "total_sequences": 1400,
+  "wall_time_seconds": 19.34,
+  "sequences_per_second": 72.38,
+  "timing_breakdown": {
+    "neural_time_seconds": 18.7038,
+    "thinning_time_seconds": 0.4166,
+    "total_sampling_time_seconds": 19.1204,
+    "neural_percentage": 97.82,
+    "thinning_percentage": 2.18,
+    "total_sampling_calls": 100
+  },
+  "timestamp": "20250730_185927"
+}

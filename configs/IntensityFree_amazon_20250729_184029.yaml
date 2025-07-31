@@ -1,0 +1,50 @@
+IntensityFree_train:
+  base_config:
+    backend: torch
+    base_dir: ./checkpoints/IntensityFree/amazon/20250729_184030
+    dataset_id: amazon
+    model_id: IntensityFree
+    runner_id: std_tpp
+    stage: train
+  model_config:
+    hidden_size: 64
+    loss_integral_num_sample_per_step: 20
+    model_specs:
+      num_mix_components: 3
+    thinning:
+      dtime_max: 5
+      look_ahead_time: 10
+      num_exp: 500
+      num_sample: 1
+      num_samples_boundary: 5
+      num_seq: 10
+      num_step_gen: 1
+      over_sample_rate: 5
+      patience_counter: 5
+  trainer_config:
+    batch_size: 64
+    early_stopping_patience: 20
+    gpu: 0
+    learning_rate: 0.001
+    max_epoch: 300
+    metrics:
+    - acc
+    - rmse
+    optimizer: adam
+    save_freq: 10
+    seed: 2019
+    shuffle: false
+    use_tfb: false
+    valid_freq: 5
+data:
+  amazon:
+    data_format: pkl
+    data_specs:
+      num_event_types: 16
+      pad_token_id: 16
+      padding_side: right
+      truncation_side: right
+    test_dir: data/amazon/amazon/test.pkl
+    train_dir: data/amazon/amazon/train.pkl
+    valid_dir: data/amazon/amazon/dev.pkl
+pipeline_config_id: runner_config

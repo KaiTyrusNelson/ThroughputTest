@@ -1,0 +1,18 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "taobao",
+  "dataset_path": "./data/taobao/train.pkl",
+  "prediction_steps": 64,
+  "total_sequences": 1300,
+  "wall_time_seconds": 1.2,
+  "sequences_per_second": 1086.76,
+  "timing_breakdown": {
+    "neural_time_seconds": 0.7678,
+    "thinning_time_seconds": 0.1917,
+    "total_sampling_time_seconds": 0.9595,
+    "neural_percentage": 80.02,
+    "thinning_percentage": 19.98,
+    "total_sampling_calls": 100
+  },
+  "timestamp": "20250730_185932"
+}

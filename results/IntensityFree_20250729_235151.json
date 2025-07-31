@@ -1,0 +1,12 @@
+{
+  "model_type": "IntensityFree",
+  "dataset": "train",
+  "dataset_path": "./data/taobao/train.pkl",
+  "samples_per_second": 7886.08,
+  "log_likelihood_per_event": -0.8377,
+  "total_events": 73905,
+  "total_sequences": 1300,
+  "walltime_seconds": 0.16,
+  "model_parameters": 28059,
+  "timestamp": "20250729_235151"
+}

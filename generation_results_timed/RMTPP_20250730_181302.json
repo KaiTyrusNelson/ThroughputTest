@@ -1,0 +1,18 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "retweet",
+  "dataset_path": "./data/retweet/retweet/train.pkl",
+  "prediction_steps": 264,
+  "total_sequences": 3072,
+  "wall_time_seconds": 1.01,
+  "sequences_per_second": 3030.54,
+  "timing_breakdown": {
+    "neural_time_seconds": 0.5586,
+    "thinning_time_seconds": 0.3262,
+    "total_sampling_time_seconds": 0.8848,
+    "neural_percentage": 63.13,
+    "thinning_percentage": 36.87,
+    "total_sampling_calls": 300
+  },
+  "timestamp": "20250730_181302"
+}

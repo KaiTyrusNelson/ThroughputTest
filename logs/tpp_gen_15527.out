@@ -1,0 +1,40 @@
+Starting generation: NHP on taobao
+Checkpoint: ./checkpoints/NHP/taobao/20250729_171910/1547333_140088285840576_250729-171910/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15527
+Array Task ID: 13
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading NHP model and dataset...
+[31;1m2025-07-30 11:30:19,985 - config.py[pid:2020687;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:20,035 - runner_config.py[pid:2020687;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:20,043 - runner_config.py[pid:2020687;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/taobao/20250729_171910/2020687_139885437781056_250730-113019/NHP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 50 as number of prediction steps for dataset
+
+2. Generating 50 prediction steps...
+Generating 50 prediction steps...
+Processing batch 1...
+Original sequence length: 64, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 64, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/NHP_taobao_20250730_113030.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: NHP
+Dataset: ./data/taobao/train.pkl
+Prediction steps: 50
+Total sequences processed: 1300
+Wall time: 8.77 seconds
+Sequences per second: 148.17
+============================================================
+Completed generation: NHP on taobao

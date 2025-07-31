@@ -1,0 +1,18 @@
+{
+  "model_type": "SAHP",
+  "dataset": "amazon",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "prediction_steps": 94,
+  "total_sequences": 3072,
+  "wall_time_seconds": 67.12,
+  "sequences_per_second": 45.77,
+  "timing_breakdown": {
+    "neural_time_seconds": 39.6535,
+    "thinning_time_seconds": 58.328,
+    "total_sampling_time_seconds": 97.9815,
+    "neural_percentage": 40.47,
+    "thinning_percentage": 59.53,
+    "total_sampling_calls": 300
+  },
+  "timestamp": "20250730_181318"
+}

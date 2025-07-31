@@ -1,0 +1,40 @@
+Starting generation: SAHP on stackoverflow
+Checkpoint: ./checkpoints/SAHP/stackoverflow/20250729_172447/1547741_140336825558208_250729-172447/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15518
+Array Task ID: 4
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading SAHP model and dataset...
+[31;1m2025-07-30 11:30:02,364 - config.py[pid:2020100;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:02,471 - runner_config.py[pid:2020100;line:140:update_config] - CRITICAL: train model SAHP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:02,478 - runner_config.py[pid:2020100;line:35:__init__] - INFO: Save the config to ./checkpoints/SAHP/stackoverflow/20250729_172447/2020100_140639681508416_250730-113002/SAHP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 50 as number of prediction steps for dataset
+
+2. Generating 50 prediction steps...
+Generating 50 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 101, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/SAHP_stackoverflow_20250730_113020.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: SAHP
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 50
+Total sequences processed: 1401
+Wall time: 16.12 seconds
+Sequences per second: 86.93
+============================================================
+Completed generation: SAHP on stackoverflow

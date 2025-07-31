@@ -1,0 +1,12 @@
+{
+  "model_type": "SAHP",
+  "dataset": "train",
+  "dataset_path": "./data/taxi/taxi/train.pkl",
+  "samples_per_second": 6942.41,
+  "log_likelihood_per_event": 0.3233,
+  "total_events": 50454,
+  "total_sequences": 1400,
+  "walltime_seconds": 0.2,
+  "model_parameters": 2476,
+  "timestamp": "20250729_233146"
+}

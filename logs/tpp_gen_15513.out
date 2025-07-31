@@ -1,0 +1,42 @@
+Starting generation: IntensityFree on amazon
+Checkpoint: ./checkpoints/IntensityFree/amazon/20250729_184030/1552444_139833835279552_250729-184030/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15513
+Array Task ID: 26
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading IntensityFree model and dataset...
+[31;1m2025-07-30 11:30:42,226 - config.py[pid:2021367;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:42,275 - runner_config.py[pid:2021367;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:42,283 - runner_config.py[pid:2021367;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/amazon/20250729_184030/2021367_139763912819776_250730-113042/IntensityFree_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 50 as number of prediction steps for dataset
+
+2. Generating 50 prediction steps...
+Generating 50 prediction steps...
+Processing batch 1...
+Original sequence length: 94, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 93, truncated to: 2 events
+Processing batch 3...
+Original sequence length: 93, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/IntensityFree_amazon_20250730_113044.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: IntensityFree
+Dataset: ./data/amazon/amazon/train.pkl
+Prediction steps: 50
+Total sequences processed: 3072
+Wall time: 0.58 seconds
+Sequences per second: 5282.93
+============================================================
+Completed generation: IntensityFree on amazon

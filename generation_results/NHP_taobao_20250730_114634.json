@@ -1,0 +1,9 @@
+{
+  "model_type": "NHP",
+  "dataset": "taobao",
+  "num_steps": 64,
+  "total_sequences": 1300,
+  "wall_time_seconds": 9.22,
+  "sequences_per_second": 140.94,
+  "timestamp": "2025-07-30T11:46:34.910201"
+}

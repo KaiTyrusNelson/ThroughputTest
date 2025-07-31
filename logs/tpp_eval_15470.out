@@ -1,0 +1,87 @@
+Starting evaluation: RMTPP on amazon
+Checkpoint: ./checkpoints/RMTPP/amazon/20250729_171829/1547140_140226742162624_250729-171829/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15470
+Array Task ID: 11
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:30,464 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:30,558 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:30,566 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234530/RMTPP_train_output.yaml[0m
+Batch size 2048 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:32,022 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,025 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,032 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 1028 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 512
+[31;1m2025-07-29 23:45:32,043 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,044 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,050 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 512 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 256
+[31;1m2025-07-29 23:45:32,061 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,061 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,068 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 256 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 128
+[31;1m2025-07-29 23:45:32,079 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,080 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,086 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 128 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 64
+[31;1m2025-07-29 23:45:32,098 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,099 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,106 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 64 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 32
+[31;1m2025-07-29 23:45:32,116 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,117 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,124 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 32 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Trying batch size: 16
+[31;1m2025-07-29 23:45:32,135 - config.py[pid:1629017;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:32,135 - runner_config.py[pid:1629017;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:32,142 - runner_config.py[pid:1629017;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/taxi/20250729_171828/1629017_139723588301888_250729-234532/RMTPP_train_output.yaml[0m
+Batch size 16 failed: Error(s) in loading state_dict for RMTPP:
+	size mismatch for b_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for w_t: copying a param with shape torch.Size([1, 16]) from checkpoint, the shape in current model is torch.Size([1, 10]).
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([17, 128]) from checkpoint, the shape in current model is torch.Size([11, 128]).
+	size mismatch for hidden_to_intensity_logits.weight: copying a param with shape torch.Size([16, 128]) from checkpoint, the shape in current model is torch.Size([10, 128]).
+	size mismatch for hidden_to_intensity_logits.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([10]).
+Error: Could not successfully evaluate on any batch size.
+Completed evaluation: RMTPP on amazon

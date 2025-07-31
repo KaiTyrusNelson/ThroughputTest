@@ -1,0 +1,19 @@
+Starting evaluation: IntensityFree on stackoverflow
+Checkpoint: ./checkpoints/IntensityFree/stackoverflow/20250729_184040/1552555_139819685872832_250729-184040/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15510
+Array Task ID: 24
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:52,756 - config.py[pid:1632954;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:52,826 - runner_config.py[pid:1632954;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:52,834 - runner_config.py[pid:1632954;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/stackoverflow/20250729_184040/1632954_140060547859520_250729-235152/IntensityFree_train_output.yaml[0m
+✓ Successfully loaded IntensityFree model and dataset
+Model parameters: 28,704
+Dataset sequences: 1401
+Log likelihood per event: -2.5852
+Total events: 89096
+Total sequences processed: 1401
+Walltime for evaluation: 0.17 seconds
+Samples per second: 8216.57
+Results logged to: ./results/IntensityFree_20250729_235154.json
+Completed evaluation: IntensityFree on stackoverflow

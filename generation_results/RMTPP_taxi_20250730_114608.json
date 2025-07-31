@@ -1,0 +1,9 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "taxi",
+  "num_steps": 38,
+  "total_sequences": 1400,
+  "wall_time_seconds": 1.12,
+  "sequences_per_second": 1245.14,
+  "timestamp": "2025-07-30T11:46:08.652981"
+}

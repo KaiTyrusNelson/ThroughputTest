@@ -1,0 +1,40 @@
+Starting generation: IntensityFree on taobao
+Checkpoint: ./checkpoints/IntensityFree/taobao/20250729_184040/1552556_140019626476736_250729-184040/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15564
+Array Task ID: 23
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading IntensityFree model and dataset...
+[31;1m2025-07-30 11:46:42,840 - config.py[pid:2035105;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:46:43,140 - runner_config.py[pid:2035105;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-30 11:46:43,149 - runner_config.py[pid:2035105;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taobao/20250729_184040/2035105_140654568502336_250730-114642/IntensityFree_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 64 as number of prediction steps for dataset
+
+2. Generating 64 prediction steps...
+Generating 64 prediction steps...
+Processing batch 1...
+Original sequence length: 64, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 64, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/IntensityFree_taobao_20250730_114644.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: IntensityFree
+Dataset: ./data/taobao/train.pkl
+Prediction steps: 64
+Total sequences processed: 1300
+Wall time: 0.47 seconds
+Sequences per second: 2738.91
+============================================================
+Completed generation: IntensityFree on taobao

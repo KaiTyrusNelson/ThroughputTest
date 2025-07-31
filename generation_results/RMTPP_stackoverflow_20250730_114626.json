@@ -1,0 +1,9 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "stackoverflow",
+  "num_steps": 101,
+  "total_sequences": 1401,
+  "wall_time_seconds": 2.04,
+  "sequences_per_second": 687.26,
+  "timestamp": "2025-07-30T11:46:26.676861"
+}

@@ -1,0 +1,40 @@
+Starting generation: IntensityFree on stackoverflow
+Checkpoint: ./checkpoints/IntensityFree/stackoverflow/20250729_184040/1552555_139819685872832_250729-184040/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15565
+Array Task ID: 24
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading IntensityFree model and dataset...
+[31;1m2025-07-30 11:46:44,127 - config.py[pid:2035136;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:46:44,441 - runner_config.py[pid:2035136;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-30 11:46:44,451 - runner_config.py[pid:2035136;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/stackoverflow/20250729_184040/2035136_140439468106816_250730-114644/IntensityFree_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 101 as number of prediction steps for dataset
+
+2. Generating 101 prediction steps...
+Generating 101 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 101, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/IntensityFree_stackoverflow_20250730_114646.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: IntensityFree
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 101
+Total sequences processed: 1401
+Wall time: 0.77 seconds
+Sequences per second: 1815.69
+============================================================
+Completed generation: IntensityFree on stackoverflow

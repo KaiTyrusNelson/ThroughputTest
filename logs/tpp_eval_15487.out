@@ -1,0 +1,19 @@
+Starting evaluation: THP on retweet
+Checkpoint: ./checkpoints/THP/retweet/20250729_172611/1547843_140527782921408_250729-172611/models
+Dataset: ./data/retweet/retweet/train.pkl
+Job ID: 15487
+Array Task ID: 1
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:27,494 - config.py[pid:1632066;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:27,625 - runner_config.py[pid:1632066;line:140:update_config] - CRITICAL: train model THP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:27,633 - runner_config.py[pid:1632066;line:35:__init__] - INFO: Save the config to ./checkpoints/THP/retweet/20250729_172611/1632066_140437481325632_250729-235127/THP_train_output.yaml[0m
+✓ Successfully loaded THP model and dataset
+Model parameters: 3,644
+Dataset sequences: 9000
+Log likelihood per event: -4.1383
+Total events: 360731
+Total sequences processed: 9000
+Walltime for evaluation: 1.06 seconds
+Samples per second: 8490.85
+Results logged to: ./results/THP_20250729_235130.json
+Completed evaluation: THP on retweet

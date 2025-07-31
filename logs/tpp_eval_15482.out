@@ -1,0 +1,111 @@
+Starting evaluation: IntensityFree on taobao
+Checkpoint: ./checkpoints/IntensityFree/taobao/20250729_184040/1552556_140019626476736_250729-184040/models
+Dataset: ./data/taobao/train.pkl
+Job ID: 15482
+Array Task ID: 23
+Trying batch size: 2048
+[31;1m2025-07-29 23:45:39,206 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:39,406 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:39,414 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234539/IntensityFree_train_output.yaml[0m
+Batch size 2048 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 1028
+[31;1m2025-07-29 23:45:40,696 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,699 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,706 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 1028 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 512
+[31;1m2025-07-29 23:45:40,717 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,718 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,725 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 512 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 256
+[31;1m2025-07-29 23:45:40,736 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,737 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,744 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 256 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 128
+[31;1m2025-07-29 23:45:40,754 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,755 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,762 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 128 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 64
+[31;1m2025-07-29 23:45:40,773 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,773 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,780 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 64 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 32
+[31;1m2025-07-29 23:45:40,791 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,791 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,798 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 32 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Trying batch size: 16
+[31;1m2025-07-29 23:45:40,809 - config.py[pid:1629449;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:45:40,809 - runner_config.py[pid:1629449;line:140:update_config] - CRITICAL: train model IntensityFree using GPU with torch backend[0m
+[38;20m2025-07-29 23:45:40,816 - runner_config.py[pid:1629449;line:35:__init__] - INFO: Save the config to ./checkpoints/IntensityFree/taxi/20250729_184026/1629449_140446515184704_250729-234540/IntensityFree_train_output.yaml[0m
+Batch size 16 failed: Error(s) in loading state_dict for IntensityFree:
+	size mismatch for layer_type_emb.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for layer_rnn.weight_ih_l0: copying a param with shape torch.Size([192, 65]) from checkpoint, the shape in current model is torch.Size([96, 33]).
+	size mismatch for layer_rnn.weight_hh_l0: copying a param with shape torch.Size([192, 64]) from checkpoint, the shape in current model is torch.Size([96, 32]).
+	size mismatch for layer_rnn.bias_ih_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for layer_rnn.bias_hh_l0: copying a param with shape torch.Size([192]) from checkpoint, the shape in current model is torch.Size([96]).
+	size mismatch for mark_linear.weight: copying a param with shape torch.Size([18, 64]) from checkpoint, the shape in current model is torch.Size([11, 32]).
+	size mismatch for mark_linear.bias: copying a param with shape torch.Size([18]) from checkpoint, the shape in current model is torch.Size([11]).
+	size mismatch for linear.weight: copying a param with shape torch.Size([9, 64]) from checkpoint, the shape in current model is torch.Size([9, 32]).
+Error: Could not successfully evaluate on any batch size.
+Completed evaluation: IntensityFree on taobao

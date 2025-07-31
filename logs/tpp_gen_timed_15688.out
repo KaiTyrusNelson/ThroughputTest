@@ -1,0 +1,44 @@
+Starting timed generation: RMTPP on stackoverflow
+Checkpoint: ./checkpoints/RMTPP/stackoverflow/20250729_171832/1547205_140694965437632_250729-171832/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15688
+Array Task ID: 12
+============================================================
+EasyTPP Timed Multistep Generation Script
+============================================================
+
+Trying with batch size: 2048
+
+1. Loading model and dataset...
+[31;1m2025-07-30 18:59:30,682 - config.py[pid:2270605;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 18:59:30,920 - runner_config.py[pid:2270605;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-30 18:59:30,929 - runner_config.py[pid:2270605;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/stackoverflow/20250729_171832/2270605_140322033919040_250730-185930/RMTPP_train_output.yaml[0m
+✓ Successfully loaded model and dataset
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+Using sequence length: 101 as number of prediction steps for dataset
+
+2. Generating 101 prediction steps...
+Generating 101 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 101 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results_timed/RMTPP_20250730_185939.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: RMTPP
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 101
+Total sequences processed: 1401
+Wall time: 7.05 seconds
+Sequences per second: 198.81
+
+TIMING BREAKDOWN:
+  Neural function evaluation: 3.2663s (48.1%)
+  Thinning algorithm: 3.5231s (51.9%)
+  Total sampling time: 6.7894s
+  Total sampling calls: 100
+============================================================
+Completed timed generation: RMTPP on stackoverflow

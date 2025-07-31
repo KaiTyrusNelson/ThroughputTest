@@ -1,0 +1,9 @@
+{
+  "model_type": "SAHP",
+  "dataset": "taxi",
+  "num_steps": 38,
+  "total_sequences": 1400,
+  "wall_time_seconds": 12.18,
+  "sequences_per_second": 114.91,
+  "timestamp": "2025-07-30T11:46:19.718749"
+}

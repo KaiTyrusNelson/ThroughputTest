@@ -1,0 +1,40 @@
+Starting generation: NHP on stackoverflow
+Checkpoint: ./checkpoints/NHP/stackoverflow/20250729_171913/1547362_140673095582912_250729-171913/models
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Job ID: 15528
+Array Task ID: 14
+============================================================
+EasyTPP Multistep Generation Script
+============================================================
+
+Trying with batch size: 1024
+
+1. Loading NHP model and dataset...
+[31;1m2025-07-30 11:30:20,051 - config.py[pid:2020705;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-30 11:30:20,084 - runner_config.py[pid:2020705;line:140:update_config] - CRITICAL: train model NHP using GPU with torch backend[0m
+[38;20m2025-07-30 11:30:20,092 - runner_config.py[pid:2020705;line:35:__init__] - INFO: Save the config to ./checkpoints/NHP/stackoverflow/20250729_171913/2020705_139813200442432_250730-113020/NHP_train_output.yaml[0m
+Event sampler dtime_max type: <class 'float'>, value: 5.0
+✓ Successfully loaded model and dataset
+Using sequence length: 50 as number of prediction steps for dataset
+
+2. Generating 50 prediction steps...
+Generating 50 prediction steps...
+Processing batch 1...
+Original sequence length: 101, truncated to: 2 events
+Processing batch 2...
+Original sequence length: 101, truncated to: 2 events
+
+3. Logging generation results...
+Generation results logged to: ./generation_results/NHP_stackoverflow_20250730_113029.json
+
+============================================================
+GENERATION SUMMARY
+============================================================
+Model: NHP
+Dataset: ./data/stackoverflow/so_v2/train.pkl
+Prediction steps: 50
+Total sequences processed: 1401
+Wall time: 8.52 seconds
+Sequences per second: 164.46
+============================================================
+Completed generation: NHP on stackoverflow

@@ -1,0 +1,12 @@
+{
+  "model_type": "SAHP",
+  "dataset": "train",
+  "dataset_path": "./data/amazon/amazon/train.pkl",
+  "samples_per_second": 6341.51,
+  "log_likelihood_per_event": -2.1504,
+  "total_events": 281923,
+  "total_sequences": 6454,
+  "walltime_seconds": 1.02,
+  "model_parameters": 8976,
+  "timestamp": "20250729_235130"
+}

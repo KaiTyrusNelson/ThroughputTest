@@ -1,0 +1,9 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "taobao",
+  "num_steps": 64,
+  "total_sequences": 1300,
+  "wall_time_seconds": 2.4,
+  "sequences_per_second": 542.13,
+  "timestamp": "2025-07-30T11:46:19.329078"
+}

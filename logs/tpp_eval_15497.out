@@ -1,0 +1,19 @@
+Starting evaluation: RMTPP on amazon
+Checkpoint: ./checkpoints/RMTPP/amazon/20250729_171829/1547140_140226742162624_250729-171829/models
+Dataset: ./data/amazon/amazon/train.pkl
+Job ID: 15497
+Array Task ID: 11
+Trying batch size: 2048
+[31;1m2025-07-29 23:51:33,218 - config.py[pid:1632346;line:34:build_from_yaml_file] - CRITICAL: Load pipeline config class RunnerConfig[0m
+[31;1m2025-07-29 23:51:33,268 - runner_config.py[pid:1632346;line:140:update_config] - CRITICAL: train model RMTPP using GPU with torch backend[0m
+[38;20m2025-07-29 23:51:33,276 - runner_config.py[pid:1632346;line:35:__init__] - INFO: Save the config to ./checkpoints/RMTPP/amazon/20250729_171829/1632346_139883482149952_250729-235133/RMTPP_train_output.yaml[0m
+✓ Successfully loaded RMTPP model and dataset
+Model parameters: 37,552
+Dataset sequences: 6454
+Log likelihood per event: -2.2026
+Total events: 281923
+Total sequences processed: 6454
+Walltime for evaluation: 0.70 seconds
+Samples per second: 9165.19
+Results logged to: ./results/RMTPP_20250729_235135.json
+Completed evaluation: RMTPP on amazon

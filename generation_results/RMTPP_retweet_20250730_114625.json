@@ -1,0 +1,9 @@
+{
+  "model_type": "RMTPP",
+  "dataset": "retweet",
+  "num_steps": 264,
+  "total_sequences": 3072,
+  "wall_time_seconds": 0.91,
+  "sequences_per_second": 3360.16,
+  "timestamp": "2025-07-30T11:46:25.839502"
+}
