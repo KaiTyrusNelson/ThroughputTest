@@ -191,15 +191,23 @@ def generate_multistep_events(model_wrapper, data_loader, num_steps=100, model_t
 
             B = batch['time_seqs'].shape[0]
             batch_tuple = (
+                batch['time_seqs'][:, :sequence_length].to(model.device),  # Keep first N events, move to model device
+                batch['time_delta_seqs'][:, :sequence_length].to(model.device),  # Keep first N events, move to model device
+                batch['type_seqs'][:, :sequence_length].to(model.device),  # Keep first N events, move to model device
+                batch['seq_non_pad_mask'][:, :sequence_length].to(model.device),  # Keep first N events, move to model device
+                batch['attention_mask'][:, :sequence_length].to(model.device)  # Keep first N events, move to model device
+            )
+            
+            # Perform multistep prediction
+            if model_type == 'IntensityFree':
+
+                batch_tuple = (
                 torch.zeros(B, num_steps+sequence_length).to(model.device),  # Keep first N events, move to model device
                 torch.zeros(B, num_steps+sequence_length).to(model.device),  # Keep first N events, move to model device
                 torch.zeros(B, num_steps+sequence_length).to(model.device),  # Keep first N events, move to model device
                 torch.zeros(B, num_steps+sequence_length).to(model.device),  # Keep first N events, move to model device
                 torch.zeros(B, num_steps+sequence_length).to(model.device)  # Keep first N events, move to model device
-            ) ## all of these tensors are just fed through the network; this does not affect the computation time for IFTPP at all
-            
-            # Perform multistep prediction
-            if model_type == 'IntensityFree':
+                )
                 # IntensityFree: loop through different truncation points and run 1-step prediction
                 batch_size = batch['time_seqs'].shape[0]
                 seq_len = batch['time_seqs'].shape[1]
@@ -393,8 +401,8 @@ def main():
             return False
 
     # Try decreasing batch sizes from 1028 down to 1 (powers of 2)
-    batch_sizes = [2 ** i for i in range(int(math.log2(1024)), 0, -1)]
-    batch_sizes = [b for b in batch_sizes if b <= 1024]
+    batch_sizes = [2 ** i for i in range(int(math.log2(2048)), 0, -1)]
+    batch_sizes = [b for b in batch_sizes if b <= 1028]
     tried = False
     for batch_size in batch_sizes:
         if try_generation_with_batch_size(batch_size):
